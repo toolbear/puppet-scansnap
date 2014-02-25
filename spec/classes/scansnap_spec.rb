@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'evernote' do
+describe 'scansnap' do
   let(:facts) do
     {
       :boxen_home => '/opt/boxen'
@@ -8,9 +8,9 @@ describe 'evernote' do
   end
 
   it do
-    should contain_package('evernote').with({
-      :source   => 'http://cdn1.evernote.com/mac/release/Evernote_402491.dmg',
-      :provider => 'appdmg_eula'
+    should contain_package('scansnap').with({
+      :source   => 'http://www.fujitsu.com/downloads/IMAGE/driver/ss/mgr/m-s1500/ScanSnap.dmg',
+      :provider => 'appdmg'
     })
   end
 end

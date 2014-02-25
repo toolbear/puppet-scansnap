@@ -5,7 +5,7 @@
 #   include scansnap
 class scansnap {
   package { 'scansnap':
-    provider => 'appdmg',
+    provider => 'pkgdmg',
     source   => 'http://www.fujitsu.com/downloads/IMAGE/driver/ss/mgr/m-s1500/ScanSnap.dmg'
   }
 }
